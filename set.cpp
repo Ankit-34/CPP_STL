@@ -11,6 +11,7 @@ int main()
     s.insert(5);
     s.insert(10);
     s.insert(30);
+    cout<<s.size()<<"-size";
     // s.emplace(30);
 
     for(auto it: s) cout<<it<<" ";

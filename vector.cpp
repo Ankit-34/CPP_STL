@@ -75,7 +75,7 @@ int main()
     cout<<z[4][4];
 
     vector<int> ab;
-    ab.push_back(1); 
+    ab.push_back(1);    
     ab.push_back(2); 
     ab.push_back(0); 
     ab.push_back(4); 

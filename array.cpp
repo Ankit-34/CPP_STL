@@ -18,8 +18,8 @@ int main()
 
     for (auto it = arr.begin(); it != arr.end(); it++)      //iterator
         cout << *it << " ";
-    // for (auto it = arr.rend(); it != arr.rbegin(); it++)
-    //     cout << *it << " ";
+    for (auto it = arr.rbegin(); it != arr.rend(); it++)
+        cout << *it << " ";
     // for(auto it: arr)    //for each loop
     //     cout << it << " ";
     cout << endl;

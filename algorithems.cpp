@@ -58,7 +58,7 @@ int main()
     //Lower bound   -   lower_bound(startIterator, endIterator, x), works in on sorted array only(here a is not sorted)
     //it returns an iterator pointing on the first element that is not less than x
     int a1[10] = {1,3,3,4,6,7,8,8,9,11};
-    auto lb_iterator = lower_bound(a1, a1+n, 5);
+    auto lb_iterator = lower_bound(a1, a1+n, 5);    
     int lb_value = *lower_bound(a1, a1+n, 5);
     int lb_index = lower_bound(a1, a1+n, 5) - a1;
     // cout<<lb_iterator<<" "<<lb_value<<" "<<lb_index<<endl;
@@ -76,7 +76,7 @@ int main()
         O(n)
         suppose our string is "abc"
         permutations are : abc acb bac bca cab cba in lexicographically(which appears in the same sequence of dictionary)
-        next_permutation(startIterator, endIterator) will return true if next permutation of given string is exists and it will change our string to that next permutation, else it returns false an our string will stya the same 
+        next_permutation(startIterator, endIterator) will return true if next permutation of given string is exists and it will change our string to that next permutation, else it returns false an our string will stay the same 
         It will first sort our string then it will find our string from all permutation and will return the next permutation
         If our entered string is not sorted and we want all per of that string than first we have to sort our string
     */

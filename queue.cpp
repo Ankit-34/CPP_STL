@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+bool even(const int& value) { return (value % 2) == 0; }
+
 int main()
 {
     priority_queue<int> pq;     //maximum priority queue - log(n)
@@ -52,6 +54,7 @@ int main()
     dq.push_front(30);
     dq.pop_back();
     dq.pop_front();
+    cout<<"Deque"<<dq[1]<<endl;
     //begin end rbegin rend empty size at clear - all are there in deque as vector
 
     list<int> ls;
@@ -61,5 +64,22 @@ int main()
     ls.push_front(30);
     ls.push_front(20);
     ls.remove(20);  //removes in O(1);
+    // ls.insert(it, val)  Inserts new elements in the list before the element at a specified position
+    // ls.remove_if(even); removes element if condition or predicate matches
+
+
+    
+    // cout<<"List element : "<<ls[0]<<endl; will not work
+    /* 
+        - inserting in list is O(1)
+        - access node is O(n)
+    */
+
+    priority_queue<pair<int, int> > priorityq;
+    priorityq.push(make_pair(18, 200));
+    priorityq.push(make_pair(29, 100));
+    priorityq.push(make_pair(29, 400));
+    pair<int, int> top = priorityq.top();
+    cout << top.first << " " << top.second;
     return 0;
 }
